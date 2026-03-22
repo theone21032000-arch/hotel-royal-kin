@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Palace Kinshasa</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), #0a0a0a),
+  url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  border-radius: 40px;
+  background: linear-gradient(45deg, gold, orange);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  border-radius: 20px;
+  width: 280px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.03);
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  opacity: 0.7;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(45deg, #111, #222);
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div>
+    <h1>ROYAL PALACE</h1>
+    <p>L'élégance redéfinie à Kinshasa</p>
+    <a href="#" class="btn">Réserver maintenant</a>
+  </div>
+</div>
+
+<section>
+  <h2>Nos Expériences</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+      <h3>Suites Luxueuses</h3>
+      <p>Un confort absolu avec vue panoramique.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+      <h3>Gastronomie</h3>
+      <p>Une cuisine raffinée entre tradition et modernité.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210b8">
+      <h3>Spa & Détente</h3>
+      <p>Relaxation totale dans un cadre exceptionnel.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Prêt pour une expérience inoubliable ?</h2>
+  <a href="#" class="btn">Réserver votre séjour</a>
+</section>
+
+<footer>
+  © 2026 Royal Palace Kinshasa
+</footer>
+
+</body>
+</html>
